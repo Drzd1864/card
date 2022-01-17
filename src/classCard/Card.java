@@ -12,6 +12,8 @@ public abstract class Card {
         this.holderName = holderName;
     }
 
+
+
     public Card(String holderName, BigDecimal accountBalance) {
         this.holderName = holderName;
         this.accountBalance = accountBalance;
