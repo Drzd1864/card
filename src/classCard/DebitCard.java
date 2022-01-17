@@ -18,7 +18,7 @@ public class DebitCard extends Card {
 
     @Override
     public BigDecimal withdrawFromCardBalance(BigDecimal amount) {
-        if (amount == null /*|| amount.compareTo(BigDecimal.ZERO) < 0*/) {
+        if (amount == null) {
             throw new IllegalArgumentException("Amount can not be negative");
         }
         if (accountBalance.compareTo(amount) >= 0) {
